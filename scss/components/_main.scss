@@ -1,0 +1,140 @@
+
+/*!-----PAGINA INDEX----*/
+.principal {
+    align-items: center;
+    flex-direction: column;
+    section {
+        display: flex;
+    }
+    section {
+        text-align: center;
+        padding: px;
+        display: flex;
+        justify-content: space-around;
+        div {
+            img {
+                width: 250px;
+                height: 250px;
+            }
+            h2 {
+                color: $color-principal;
+                font-style: italic;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin: 10px 0px -12px 0px;
+            }
+            p {
+                color: $color-secundario;
+                font-size: 18px;
+                font-style: normal;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 30px;
+                text-align: unset;
+            }
+        }
+    }
+}
+
+
+/*!-----PAGINA GALERIA----*/
+.datos {
+    background-color: $color-terciario;
+    padding: 20px;
+    @extend %flex-center;
+    section {
+        div {
+            p {
+                color: $color-secundario;
+                font-size: 20px;
+                font-style: italic;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+/*!-----PAGINA PROVINCIAS----*/
+.provincias {
+    flex-direction: column;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    section {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 250px;
+        gap: 5px;
+        padding: 30px;
+        div {
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: 2px 2px 43px -3px rgba(10, 238, 250, 0.62);
+                -webkit-box-shadow: 2px 2px 43px -3px rgba(10, 238, 250, 0.62);
+                -moz-box-shadow: 2px 2px 43px -3px rgba(10, 238, 250, 0.62);
+            }
+            p {
+                position: absolute;
+                bottom: 0;
+                color: $color-secundario;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+/*!-----PAGINA FOTOGRAFOS-LOCUTORES----*/
+.fotografos-locutores {
+    background-color: $color-terciario;
+    @extend %flex-center;
+    flex-direction: row;
+    padding: 20px;
+    text-align: center;
+        section {
+            div {
+                p {
+                    color: $color-secundario;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-align: center;
+                }
+                div {
+                    a {
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        text-decoration: none;
+                        color: $color-terciario;
+                        background-color: brown;
+                        font-size: 20px;
+                        padding: 8px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    
+}
+
+
+/*!-----PAGINA PATROCINADORES----*/
+.publicidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    section {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+
+}
