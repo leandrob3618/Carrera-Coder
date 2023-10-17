@@ -37,13 +37,20 @@
             }
         }
 
-        @media screen and (max-width:900px) { /*!-----PAGINA PROVINCIAS----*/ 
-            .grid-galeria {
-                grid-column: repeat(2, 1fr);
-                grid-auto-flow: 500px;
-                }
-            .grid-items{
+        @media screen and (max-width:900px) {/*!-----PAGINA PROVINCIAS----*/
+            .provincias {
+                grid-template-columns: repeat(6, 1fr);
+                grid-auto-rows: 200px;
+            }
+            .grid-items {
                 grid-column: span 1;
                 grid-row: span 1;
             }
+        }
+    
+        @media screen and (max-width:900px) {/*!-----PAGINA DATOS-FOTOGRAFOS-LOCUTORES----*/
+            .datos-fotografos-locutores {
+                grid-template-columns: repeat(6, 1fr);
+                grid-auto-rows: 200px;
             }
+        }
