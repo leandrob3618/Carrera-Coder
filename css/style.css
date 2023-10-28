@@ -196,20 +196,42 @@ footer {
 
 .patrocinio p { /*!-----TEXTO-----*/
     color: #03b2cb;
-    font-size: 30px;
+    font-size: 10px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0px 40px 40px 40px;
     text-align: center;
 }
 
 .patrocinio img { /*!-----IMAGEN-----*/
-    width: 500px;
-    height: 250px;
-    margin: 0px 0px 50px 420px;
+    width: 200px;
+    height: 150px;
 }
 
-.publicidad {
+.patrocinio div {
+    width: 250px;
+    height: 300px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.patrocinio {
+    /* text-align: center; */
+    display: flex; 
+    flex-direction: row;
+}
+
+.patrocinio div a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+/* .publicidad {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -218,7 +240,7 @@ footer {
 
 .redes {
     padding: 30px;
-}
+} */
 
 
 
